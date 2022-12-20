@@ -5,46 +5,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <!--CSS PROJETO -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
     <title>Home</title>
 </head>
 
 <body>
 
-    <header class="topo">
-        <img class="ticket" src="img/ticket.png">
-        <h1>E-TICKET</h1>
-    </header>
-    <p class="center vermelho">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit sint ipsa aut quaerat
-        delectus
-        consectetur atque
-        commodi iure sapiente accusantium architecto cumque magni neque, in voluptatum veritatis, unde earum aspernatur?
-    </p>
-    <p id="teste" class="vermehlo">Magnam delectus nulla ut repudiandae adipisci cum ducimus quas, necessitatibus,
-        nesciunt modi
-        temporibus autem.
-        Eum minima, perspiciatis ipsam dicta voluptates, ullam praesentium nisi impedit provident hic debitis. Iure,
-        dolor tempore!</p>
-    <p class="vermelho">Commodi accusamus, delectus est iste facere quibusdam dicta exercitationem similique nemo nulla
-        ab amet illum
-        perspiciatis, placeat omnis praesentium quaerat magni quos id, aperiam distinctio. Consequuntur optio tempora
-        cum molestias.</p>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img class="logo" src="img/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-    <br>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
 
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" autocomplete="off"
+                            placeholder="Buscar eventos..." minlength="3" aria-label="Search">
 
-    <div class="exemplo-back center">
+                        <li class="d-flex">
+                            <button type="button" class="btn btn-primary">Login</button>
+                        </li>
 
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo maxime voluptates odio! Odio ipsa modi illo
-            dolorem ad iste, atque doloremque soluta culpa itaque reprehenderit aspernatur dolores provident, quasi
-            accusamus.</p>
+                </ul>
 
 
+                </form>
 
+
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/onepiece_red.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>One Piece film - Red</h5>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/2022-avatar-2-4k-hd.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Avatar: O Caminho da Água</h5>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/black-adam.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Adão Negro</h5>
+
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
-    <a href="outra.html">IR para outra página</a>
+    <div class="card" style="width: 18rem;">
+        <img src="img/show.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <footer class="rodape py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <img src="img/Virtual Ticket’s.png" alt="">
+            </ul>
+            <p class="text-center text-muted">&copy; 2022 IFPE,Inc</p>
+        </footer>
+    </div>
+
 </body>
 
 </html>

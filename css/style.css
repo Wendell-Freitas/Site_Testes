@@ -1,21 +1,19 @@
 body {
-    padding: 80px;
     background-color: rgba(0, 0, 0, 0.856);
 }
 
-h1 {
+.bg-primary-color {
+
+    background-color: rgba(0, 0, 0, 0.856);
+}
+
+#nome_site {
 
     color: rgba(136, 32, 6, 0.904);
     font-size: 50px;
-    text-align: left;
+    text-align: justify;
     margin: 0;
     margin-top: 0%;
-}
-
-.vermelho {
-
-    color: red;
-    border: 5px groove black;
 }
 
 
@@ -33,28 +31,52 @@ h1 {
 
 .exemplo-back {
 
+    position: relative;
+    z-index: 0;
     height: 400px;
-    background-image: url("../img/OnePiece.jfif");
+    background-image: url("../img/onepiece_red.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.ticket {
+.logo {
 
-    height: 60px;
-    width: 60px;
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 100px;
+    width: 100px;
+
 
 }
 
 .topo {
 
+    position: relative;
+    z-index: 1;
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 0px;
-    z-index: 999px;
+    max-height: 5%;
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+    padding-bottom: 5%;
 
 
+
+}
+
+.form-control {
+    width: 500px;
+}
+
+.rodape {
+
+    margin-top: 10%;
+}
+
+h5 {
+    color: azure;
+    text-shadow: 1px 1px 2px black;
+    ;
 }

@@ -1,10 +1,36 @@
-body {
-    background-color: rgba(0, 0, 0, 0.856);
+body {}
+
+p.truncate-3l {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
 }
 
 .bg-primary-color {
 
-    background-color: rgba(10, 21, 10, 0.856);
+    background-color:
+        #102E44;
+}
+
+.bg-secondary-color {
+
+    background-color:
+        #B2FCFB;
+}
+
+.nav-link,
+.navbar-toggler {
+    color:
+        #FFFFFF;
+
+}
+
+.cadastro-link {
+    text-align: center;
+    text-decoration: none;
 }
 
 .eventos {
@@ -17,7 +43,7 @@ body {
 .navbar {
     margin-bottom: auto;
     min-height: 12%;
-    max-height: 12%;
+
 }
 
 .cards {
@@ -83,17 +109,13 @@ body {
 
 }
 
-.form-control {
-    width: 500px;
-}
 
-.rodape {
 
-    margin-top: 50%;
-}
 
+/*
 h5 {
     color: azure;
     text-shadow: 1px 1px 2px black;
     ;
 }
+*/
